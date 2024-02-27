@@ -1,0 +1,46 @@
+Természetesen! Itt vannak a válaszok a **LINQ**-val kapcsolatos kérdéseidre:
+
+1. **Mi a LINQ rövidítése és mit jelent?**
+   - A **LINQ** a **Language-Integrated Query** rövidítése. Ez egy olyan technológia, amely lehetővé teszi a deklaratív lekérdezések írását és az adatok kezelését a .NET keretrendszerben.
+
+2. **Hogyan lehet a LINQ-t használni egy gyűjteményben található elemek kiválasztására?**
+   - A **Select** operátorral. Például:
+     ```csharp
+     var selectedItems = collection.Select(item => item.Property);
+     ```
+
+3. **Milyen típusú adatforrásokat támogat a LINQ?**
+   - A LINQ támogatja a **gyűjteményeket, adatbázisokat, XML-dokumentumokat és JSON-fájlokat**.
+
+4. **Hogyan lehet a LINQ-t használni adatbázisokhoz való hozzáféréshez?**
+   - A **LINQ to SQL** vagy az **Entity Framework** segítségével.
+
+5. **Mi a különbség a nyelvszintű lekérdezési szintaxis és az IEnumerable<T> API között?**
+   - A nyelvszintű lekérdezési szintaxis (pl. **LINQ query syntax**) olvashatóbb és deklaratívabb, míg az **IEnumerable<T> API** imperatívabb.
+
+6. **Hogyan lehet egy gyűjteményt szótárrá konvertálni a LINQ segítségével?**
+   - Például:
+     ```csharp
+     var dictionary = collection.ToDictionary(item => item.Key, item => item.Value);
+     ```
+
+7. **Milyen előnyei vannak a LINQ használatának az imperatív kódhoz képest?**
+   - Rövidebb, olvashatóbb kód és jobb teljesítmény.
+
+8. **Hogyan lehet a LINQ-t használni XML-dokumentumok kezelésére?**
+   - A **LINQ to XML** segítségével.
+
+9. **Mi a LINQ-szolgáltató és milyen példák vannak rá?**
+   - A LINQ-szolgáltató olyan komponens, amely lehetővé teszi a LINQ használatát egy adott adatforrásra. Példák: **LINQ to SQL, LINQ to Entities, LINQ to XML**.
+
+10. **Hogyan lehet saját LINQ-szolgáltatót írni?**
+    - Az **IQueryable<T>** interfészt implementálva.
+
+11. **Miért hasznos a LINQ a kódbázis méretének csökkentésében?**
+    - Mert kevesebb kódot kell írni a lekérdezésekhez.
+
+12. **Hogyan lehet a LINQ-t használni JSON-dokumentumok kezelésére?**
+    - A **Newtonsoft.Json** vagy a **System.Text.Json** segítségével.
+
+13. **Miért fontos a LINQ használata az adathozzáférés egyszerűsítése érdekében?**
+    - Mert lehetővé teszi a hatékony és olvasható adatlekérdezéseket.

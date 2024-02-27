@@ -1,0 +1,14 @@
+
+1. Mi a LINQ rövidítése és mit jelent?
+2. Hogyan lehet a LINQ-t használni egy gyűjteményben található elemek kiválasztására?
+3. Milyen típusú adatforrásokat támogat a LINQ?
+4. Hogyan lehet a LINQ-t használni adatbázisokhoz való hozzáféréshez?
+5. Mi a különbség a nyelvszintű lekérdezési szintaxis és az IEnumerable<T> API között?
+6. Hogyan lehet egy gyűjteményt szótárrá konvertálni a LINQ segítségével?
+7. Milyen előnyei vannak a LINQ használatának az imperatív kódhoz képest?
+8. Hogyan lehet a LINQ-t használni XML-dokumentumok kezelésére?
+9. Mi a LINQ-szolgáltató és milyen példák vannak rá?
+10. Hogyan lehet saját LINQ-szolgáltatót írni?
+11. Miért hasznos a LINQ a kódbázis méretének csökkentésében?
+12. Hogyan lehet a LINQ-t használni JSON-dokumentumok kezelésére?
+13. Miért fontos a LINQ használata az adathozzáférés egyszerűsítése érdekében?
