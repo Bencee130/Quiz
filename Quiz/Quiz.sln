@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quizwinform", "quizwinform\quizwinform.csproj", "{14BA88A0-C2A9-430F-9071-513D80082AEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "Quiz\Quiz.csproj", "{C666FC3A-7A0E-4EF4-8649-CC266A495A04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{14BA88A0-C2A9-430F-9071-513D80082AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14BA88A0-C2A9-430F-9071-513D80082AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14BA88A0-C2A9-430F-9071-513D80082AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14BA88A0-C2A9-430F-9071-513D80082AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C666FC3A-7A0E-4EF4-8649-CC266A495A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C666FC3A-7A0E-4EF4-8649-CC266A495A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C666FC3A-7A0E-4EF4-8649-CC266A495A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C666FC3A-7A0E-4EF4-8649-CC266A495A04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F7C018A3-84A7-483A-8FDD-1461C976689B}
+		SolutionGuid = {79928FD1-3537-41B7-9CEF-1E97372E9B3A}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Quiz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quiz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="QuestionTextBlock" TextWrapping="Wrap" Margin="10" FontSize="16"/>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <RadioButton x:Name="Answer1RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
+            <RadioButton x:Name="Answer2RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
+            <RadioButton x:Name="Answer3RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Következő" Click="NextButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
