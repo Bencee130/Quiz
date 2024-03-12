@@ -5,24 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+        Title="MainWindow" Height="273" Width="618">
+    <Grid Margin="0,0,10,-6">
+        <TextBlock HorizontalAlignment="Left" Margin="70,26,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="17" Width="443" Name="QuestionTextBlock"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="70,66,0,0" VerticalAlignment="Top" Name="RadioOptionA"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="70,98,0,0" VerticalAlignment="Top" Name="RadioOptionB"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="70,131,0,0" VerticalAlignment="Top" Name="RadioOptionC"/>
+        <Button Content="Következő kérdés!" HorizontalAlignment="Left" Margin="70,186,0,0" VerticalAlignment="Top" Name="NextButton" Click="NextButton_Click_1"/>
 
-        <TextBlock x:Name="QuestionTextBlock" TextWrapping="Wrap" Margin="10" FontSize="16"/>
-
-        <StackPanel Grid.Row="1" Margin="10">
-            <RadioButton x:Name="Answer1RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
-            <RadioButton x:Name="Answer2RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
-            <RadioButton x:Name="Answer3RadioButton" Content="" GroupName="Answers" Margin="0,5"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <Button Content="Következő" Click="NextButton_Click" Margin="5"/>
-        </StackPanel>
     </Grid>
 </Window>

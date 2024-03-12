@@ -8,96 +8,248 @@ namespace Quiz
 {
     public partial class MainWindow : Window
     {
-        private List<Question> questions;
-        private Grid AnswersGrid; // Hozzáadtuk az AnswersGrid mezőt
+        private readonly List<Question> questions = new List<Question>
+        {
+            new Question
+            {
+                Text = "Mi a LINQ rövidítése és mit jelent?",
+                Answers = new List<string>
+                {
+                    "a) Language-Integrated Query, nyelvszintű lekérdezés",
+                    "b) List-Integrated Query, lista alapú lekérdezés",
+                    "c) Local-Integrated Query, helyi alapú lekérdezés"
+                },
+                CorrectAnswer = "a) Language-Integrated Query, nyelvszintű lekérdezés"
+            },
+            new Question
+            {
+                Text = "Hogyan lehet a LINQ-t használni egy gyűjteményben található elemek kiválasztására?",
+                Answers = new List<string>
+                {
+                    "a) Az OfType<T> metódus segítségével",
+                    "b) A Select metódus segítségével",
+                    "c) Az OrderBy metódus segítségével"
+                },
+                CorrectAnswer = "b) A Select metódus segítségével"
+            },
+            new Question
+            {
+                Text = "Milyen típusú adatforrásokat támogat a LINQ?",
+                Answers = new List<string>
+                {
+                    "a) Csak adatbázisokat",
+                    "b) Csak gyűjteményeket",
+                    "c) Szinte minden típusú adatforrást"
+                },
+                CorrectAnswer = "c) Szinte minden típusú adatforrást"
+            },
+            new Question
+            {
+                Text = "Hogyan lehet a LINQ-t használni adatbázisokhoz való hozzáféréshez?",
+                Answers = new List<string>
+                {
+                    "a) Az Entity Framework használatával ",
+                    "b) A Join művelettel",
+                    "c) Az OrderBy művelettel "
+                },
+                CorrectAnswer = "a) Az Entity Framework használatával"
+            },
+            new Question
+            {
+                Text = "Mi a különbség a nyelvszintű lekérdezési szintaxis és az IEnumerable<T> API között?",
+                Answers = new List<string>
+                {
+                    "a) A nyelvszintű lekérdezés rövidebb és olvashatóbb kódolást tesz lehetővé",
+                    "b) Az IEnumerable<T> manuálisan írott foreach ciklusokat igényel",
+                    "c) A nyelvszintű lekérdezés széles körű adatfeldolgozást tesz lehetővé"
+                },
+                CorrectAnswer = "a) A nyelvszintű lekérdezés rövidebb és olvashatóbb kódolást tesz lehetővé"
+            },
+            new Question
+            {
+                Text = "Hogyan lehet egy gyűjteményt szótárrá konvertálni a LINQ segítségével?",
+                Answers = new List<string>
+                {
+                    "a) Az XmlDocument osztály használatával",
+                    "b) Az XDocument és XElement típusokkal",
+                    "c) Az XmlSerializer attribútumokkal"
+                },
+                CorrectAnswer = "b) Az XDocument és XElement típusokkal"
+            },
+            new Question
+            {
+                Text = "Milyen előnyei vannak a LINQ használatának az imperatív kódhoz képest?",
+                Answers = new List<string>
+                {
+                    "a) Kompaktabb, olvashatóbb kód ",
+                    "b) Kiváló teljesítmény az adatfeldolgozásban",
+                    "c) Több szálon történő párhuzamosítás támogatása"
+                },
+                CorrectAnswer = "a) Kompaktabb, olvashatóbb kód "
+            },
+            new Question
+            {
+                Text = "Hogyan lehet a LINQ-t használni XML-dokumentumok kezelésére?",
+                Answers = new List<string>
+                {
+                    "a) Az XmlDocument osztály használatával",
+                    "b) Az XDocument és XElement típusokkal",
+                    "c) Az XmlSerializer attribútumokkal"
+                },
+                CorrectAnswer = "b) Az XDocument és XElement típusokkal"
+            },
+            new Question
+            {
+                Text = "Mi a LINQ-szolgáltató és milyen példák vannak rá?",
+                Answers = new List<string>
+                {
+                    "a) Az adatforrástól függő specifikus LINQ implementáció",
+                    "b) Példák: LINQ to SQL, LINQ to Entities, LINQ to XML",
+                    "c) Az IEnumerable<T> interfész implementációja"
+                },
+                CorrectAnswer = "b) Példák: LINQ to SQL, LINQ to Entities, LINQ to XML"
+            },
+            new Question
+            {
+                Text = "Hogyan lehet saját LINQ-szolgáltatót írni?",
+                Answers = new List<string>
+                {
+                    "a) Az IQueryable<T> interfész implementálásával ",
+                    "b) Az IEnumerable<T> interfész kiterjesztésével",
+                    "c) Az OrderBy művelet felülírásával"
+                },
+                CorrectAnswer = "a) Az IQueryable<T> interfész implementálásával "
+            },
+            new Question
+            {
+                Text = "Miért hasznos a LINQ a kódbázis méretének csökkentésében?",
+                Answers = new List<string>
+                {
+                    "a) Az ismétlődő kód elkerülése és újrafelhasználhatóság növelése ",
+                    "b) A kompakt és olvasható kód miatt könnyebb karbantarthatóság",
+                    "c) A LINQ automatikusan optimalizálja a lekérdezéseket"
+                },
+                CorrectAnswer = "a) Az ismétlődő kód elkerülése és újrafelhasználhatóság növelése "
+            },
+            new Question
+            {
+                Text = "Hogyan lehet a LINQ-t használni JSON-dokumentumok kezelésére?",
+                Answers = new List<string>
+                {
+                    "a) Az Newtonsoft.Json könyvtár használatával ",
+                    "b) Az XmlSerializer attribútumokkal",
+                    "c) Az IEnumerable<T> interfész implementációjával"
+                },
+                CorrectAnswer = "a) Az Newtonsoft.Json könyvtár használatával "
+            },
+            new Question
+            {
+                Text = "Miért fontos a LINQ használata az adathozzáférés egyszerűsítése érdekében?",
+                Answers = new List<string>
+                {
+                    "a) Rövid, olvasható kód a bonyolult adatműveletekhez",
+                    "b) Könnyű és gyors adatfeldolgozás a LINQ kényelmes műveleteivel",
+                    "c) A LINQ automatikusan optimalizálja a lekérdezéseket és kezeli az adatkapcsolatokat"
+                },
+                CorrectAnswer = "b) Könnyű és gyors adatfeldolgozás a LINQ kényelmes műveleteivel"
+            },
+            new Question
+            {
+                Text = "Hány ötöst érdemel a csapat?",
+                Answers = new List<string>
+                {
+                    "a) Az összeset + 2",
+                    "b) Mennyit akartok?",
+                    "c) Annyit amennyivel Dunát lehet rekeszteni"
+                },
+                CorrectAnswer = "a) Az összeset + 2"
+            },
+
+            // Add more questions here...
+        };
+
+        private int currentQuestionIndex = 0;
+        private int correctAnswers = 0;
 
         public MainWindow()
         {
-            InitializeComponents();
             InitializeComponent();
-            InitializeQuestions();
-            DisplayQuestion(0);
+            LoadQuestion(currentQuestionIndex);
         }
 
-        private void InitializeQuestions()
+        private void LoadQuestion(int index)
         {
-            questions = new List<Question>
-            {
-                new Question("Mi a LINQ rövidítése?", new List<string> { "Language Integrated Query", "Linear Inquiry", "List Item and Query" }),
-                new Question("Melyik LINQ metódus használható a csoportosításra?", new List<string> { "GroupBy", "Filter", "Select" }),
-
-
-                // További kérdések és válaszok hozzáadása itt
-            };
-        }
-
-        private void DisplayQuestion(int index)
-        {
-            if (index >= 0 && index < questions.Count)
+            if (index < questions.Count)
             {
                 Question question = questions[index];
                 QuestionTextBlock.Text = question.Text;
 
-                for (int i = 0; i < question.Answers.Count; i++)
-                {
-                    if (i < AnswersGrid.Children.Count)
-                    {
-                        RadioButton radioButton = (RadioButton)AnswersGrid.Children[i];
-                        radioButton.Content = question.Answers[i];
-                        radioButton.IsChecked = false;
-                        radioButton.Visibility = Visibility.Visible; // Beállítjuk a láthatóságot
-                    }
-                }
-                for (int i = question.Answers.Count; i < AnswersGrid.Children.Count; i++)
-                {
-                    RadioButton radioButton = (RadioButton)AnswersGrid.Children[i];
-                    radioButton.Visibility = Visibility.Collapsed;
-                }
-            }
-        }
+                List<string> answers = question.Answers.OrderBy(a => Guid.NewGuid()).ToList();
+                RadioOptionA.Content = answers[0];
+                RadioOptionB.Content = answers[1];
+                RadioOptionC.Content = answers[2];
 
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            int nextIndex = questions.IndexOf(questions.FirstOrDefault(q => q.IsAnswered == false));
-            if (nextIndex != -1)
-                DisplayQuestion(nextIndex);
+                // Reset radio button selection
+                RadioOptionA.IsChecked = false;
+                RadioOptionB.IsChecked = false;
+                RadioOptionC.IsChecked = false;
+            }
             else
-                MessageBox.Show("Gratulálok, végeztél a quiz-el!");
+            {
+                MessageBox.Show($"Kvíz vége! Helyes válaszok: {correctAnswers} / {questions.Count}");
+                Close();
+            }
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        public void CheckAnswer(string selectedAnswer)
         {
-            RadioButton radioButton = sender as RadioButton;
-            if (radioButton != null && radioButton.IsChecked == true)
+            if (selectedAnswer == questions[currentQuestionIndex].CorrectAnswer)
             {
-                Question question = questions.FirstOrDefault(q => q.Text == QuestionTextBlock.Text);
-                if (question != null)
+                correctAnswers++;
+            }
+
+            currentQuestionIndex++;
+            LoadQuestion(currentQuestionIndex);
+        }
+
+        public void RadioOption_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton selectedOption = sender as RadioButton;
+            if (selectedOption != null && selectedOption.IsChecked == true)
+            {
+                string selectedAnswer = selectedOption.Content.ToString();
+                CheckAnswer(selectedAnswer);
+            }
+        }
+
+        
+
+        private void NextButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (RadioOptionA.IsChecked == false && RadioOptionB.IsChecked == false && RadioOptionC.IsChecked == false)
+            {
+                MessageBox.Show("Kérem válasszon egy válaszlehetőséget!");
+                return;
+            }
+
+            if (currentQuestionIndex < questions.Count)
+            {
+                string selectedAnswer = "";
+                if (RadioOptionA.IsChecked == true)
                 {
-                    question.IsAnswered = true;
-                    // Ellenőrizhetjük itt a válasz helyességét és egyéb feladatokat végezhetünk el
+                    selectedAnswer = RadioOptionA.Content.ToString();
                 }
+                else if (RadioOptionB.IsChecked == true)
+                {
+                    selectedAnswer = RadioOptionB.Content.ToString();
+                }
+                else if (RadioOptionC.IsChecked == true)
+                {
+                    selectedAnswer = RadioOptionC.Content.ToString();
+                }
+
+                CheckAnswer(selectedAnswer);
             }
-        }
-
-        private void InitializeComponents()
-        {
-            // Hozzáadjuk az AnswersGrid-et a MainWindow tartalmához
-            this.AnswersGrid = new Grid();
-            Grid.SetRow(this.AnswersGrid, 1);
-            this.Content = this.AnswersGrid;
-
-            // Hozzáadjuk a rádiógombokat az AnswersGrid-hez
-            for (int i = 0; i < 3; i++)
-            {
-                RadioButton radioButton = new RadioButton();
-                radioButton.Margin = new Thickness(0, 5, 0, 0);
-                Grid.SetRow(radioButton, i);
-                Grid.SetColumn(radioButton, 0);
-                AnswersGrid.Children.Add(radioButton)
-        ;
-            }
-
-            // További inicializációk (pl. gombok, stb.) itt...
         }
     }
 
@@ -105,13 +257,6 @@ namespace Quiz
     {
         public string Text { get; set; }
         public List<string> Answers { get; set; }
-        public bool IsAnswered { get; set; }
-
-        public Question(string text, List<string> answers)
-        {
-            Text = text;
-            Answers = answers;
-            IsAnswered = false;
-        }
+        public string CorrectAnswer { get; set; }
     }
 }
