@@ -18,3 +18,23 @@ C:\Users\Kovacs.Zeteny.Zsolt\Desktop\GitHub\Eg_12K\Kovács Zétény Zsolt\Quiz\Q
 C:\Users\Kovacs.Zeteny.Zsolt\Desktop\GitHub\Eg_12K\Kovács Zétény Zsolt\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.pdb
 C:\Users\Kovacs.Zeteny.Zsolt\Desktop\GitHub\Eg_12K\Kovács Zétény Zsolt\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.genruntimeconfig.cache
 C:\Users\Kovacs.Zeteny.Zsolt\Desktop\GitHub\Eg_12K\Kovács Zétény Zsolt\Quiz\Quiz\obj\Debug\net6.0-windows\ref\Quiz.dll
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\bin\Debug\net6.0-windows\Quiz.exe
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\bin\Debug\net6.0-windows\Quiz.deps.json
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\bin\Debug\net6.0-windows\Quiz.runtimeconfig.json
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\bin\Debug\net6.0-windows\Quiz.dll
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\bin\Debug\net6.0-windows\Quiz.pdb
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz_MarkupCompile.cache
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz_MarkupCompile.lref
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.g.resources
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.AssemblyInfoInputs.cache
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.AssemblyInfo.cs
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.csproj.CoreCompileInputs.cache
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.dll
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\refint\Quiz.dll
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.pdb
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.genruntimeconfig.cache
+C:\Users\Kiss.Benedek\Desktop\Quiz\Quiz\Quiz\Quiz\obj\Debug\net6.0-windows\ref\Quiz.dll

@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Kovacs.Zeteny.Zsolt\\.nuget\\packages\\": {},
+    "C:\\Users\\Kiss.Benedek\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kovacs.Zeteny.Zsolt\\Desktop\\GitHub\\Eg_12K\\Kovács Zétény Zsolt\\Quiz\\Quiz\\Quiz.csproj",
+      "projectUniqueName": "C:\\Users\\Kiss.Benedek\\Desktop\\Quiz\\Quiz\\Quiz\\Quiz\\Quiz.csproj",
       "projectName": "Quiz",
-      "projectPath": "C:\\Users\\Kovacs.Zeteny.Zsolt\\Desktop\\GitHub\\Eg_12K\\Kovács Zétény Zsolt\\Quiz\\Quiz\\Quiz.csproj",
-      "packagesPath": "C:\\Users\\Kovacs.Zeteny.Zsolt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kovacs.Zeteny.Zsolt\\Desktop\\GitHub\\Eg_12K\\Kovács Zétény Zsolt\\Quiz\\Quiz\\obj\\",
+      "projectPath": "C:\\Users\\Kiss.Benedek\\Desktop\\Quiz\\Quiz\\Quiz\\Quiz\\Quiz.csproj",
+      "packagesPath": "C:\\Users\\Kiss.Benedek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kiss.Benedek\\Desktop\\Quiz\\Quiz\\Quiz\\Quiz\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kovacs.Zeteny.Zsolt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kiss.Benedek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
