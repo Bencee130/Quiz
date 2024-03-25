@@ -175,6 +175,7 @@ namespace Quiz
         {
             InitializeComponent();
             LoadQuestion(currentQuestionIndex);
+            
         }
 
         private void LoadQuestion(int index)
